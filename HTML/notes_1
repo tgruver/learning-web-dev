@@ -1,0 +1,76 @@
+
+DOM --> Document Object Model: Outlines structure of HTML elements. Useful so we know where to refrence HTML elements for CSS & Javascript
+
+Elements can be inline or blocks
+ --> Inline elements are elements that go within a block of text, like <code></code>
+ --> Block elements are elements that go aroung a block of text like <p></p>
+
+## Entites
+&lt; = < || &gt; = >  || &amp; = & --> Can be used to show something in a page without it being interpred as a command
+&nbsp; --> Used to to insert a non-breaking space between two words. Will instead just write text joined by entity in a new line if it would have broke a space
+
+
+## Common elements: 
+# Important elements
+  <p> --> HTML Tag: Opening tag for paragraphs || </p> --> HTML Tag: Closing tag for paragraphs 
+ <h> </h> --> Headline tag: <h1> is biggest, <h6> is smallest, can use values between 1 and 6
+ <!-- --> Comments 
+<br>--> Line break... Breaks text exactly at <br>, no </br> necessary
+<pre></pre>  Breaks text according to indentation in HTML, block element
+<code></code> --> used for short snippets inside other content, like a larger block
+#Lists
+<li> </li> --> List, to be used to seperate items. Surround by either <ul></ul> or <ol></ol> 
+<ul> </ul> --> Unordered list, to be used to convey that order of elements in list do not matter for CSS styling. Seperates elements by bullet points
+<ol> </ol> --> Ordered list, to be used to convey that order of elements in list DOES matter for CSS styling. Seperates elements by index (I.E: 1,2,3...)
+<nav> ... </nav> --> Tells browser which set of links are used for site navigation
+#Dictionary
+<dt> term </dt> : Key
+  <dd></dd> : Value
+To assign a description to a key item
+
+# Citations
+<cite> - Tyler Gruver </cite> --> Used to cite authors, helpful to target later in CSS
+<blockquote> </blockquote> --> Large block quotation
+<q></q> for smaller quotes I.E a few words
+
+#Dates
+<time> date here nigga </time>
+
+#Misc
+<i> </i> --> Visual Italics --> To be visally italicized BUT not verbally emphesized
+<em> </em> --> Verbally expressive italics, looks the same visually but when read via text to speech text is emphasized here
+<strong> </strong> --> Creaetes larger text, similar to headlines used to say this phrase contains important meaning
+<strong> </strong> --> Creaetes smaller text, converys insignifcance
+<b> </b> --> typical bold text, typically done for CSS bc this is a stylistic decision, therefore CSS should be used for this. 
+<sup></sup> --> superscripts
+<sub></sub> --> Subscript
+<></>
+<></>
+<></>
+<></>
+<></>
+<></>
+<></>
+<></>
+
+##Common attributes
+<time="2025-06-015"></time> --> Specify naming convention for name
+<time datetime= "15:45-05:00"> Specify time zone</>
+
+#Common Global Attribute --> Attributes that can be applied 
+<p class = "intro" id = "article-intro"></p> --> Assigns a class element so we can make sweeping changes to instances of elements with the same class ID using CSS & Javascrit
+<p class="intro" id = "article-intro"> </p > --> Similar to class but only 1 element can be assigned with a ID in css and javascript
+<blockquote contenteditable="true></blockquote> --> Allows visitor of site to edit contents within element
+<p dir="ltr"></p> --> direction for content to be read from left to right. Use "rgt" for text to be read from right to left (i.e for arabic text nigga)
+
+#ARIA ROLES (still global attributes) --> Help provide information about specific elements
+<h1 aria-label ="Hello World"> <div aria-hidden=" " > ... </div>  </ h1 > --> replaces elements within div with aria label "Hello World" within h1 element. 
+<nav role = "Navigation"></nav> --> defines use case of element
+<></>
+
+<></>
+##Making links
+Absolute URLS: Used for external resources like APIs, can use bc they location of files wont ever change nigga.
+Relative URLS: Used commonly when working on projects that require both local and server hosting, because relative URLS are more resilent when changing directory PATHS
+<a href="https://example.com">LinkNameHere</a> 
+<></>
